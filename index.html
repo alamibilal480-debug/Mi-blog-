@@ -5,79 +5,166 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sabores Delicados</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #FFF7FA;
-      color: #333333;
-    }
+  /* ================================
+     PALETA PASTEL - SABORES DELICADOS
+     ================================ */
 
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #FFD9E2;
-      padding: 15px 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      z-index: 1000;
+  :root {
+    --fondo: #FFF7FA;
+    --header: #FFD9E2;
+    --tarjeta: #FFE3EB;
+    --tarjeta-hover: #FFD3E1;
+    --texto: #333333;
+    --boton: #FFD9E2;
+    --boton-hover: #FFC7D6;
+    --sombra: rgba(0, 0, 0, 0.08);
+  }
+
+  /* ================================
+     ESTILOS GENERALES
+     ================================ */
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: "Arial", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* ================================
+     ENCABEZADO
+     ================================ */
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--header);
+    padding: 18px 20px;
+    box-shadow: 0 4px 10px var(--sombra);
+    z-index: 1000;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: var(--texto);
+  }
+
+  nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #FF8FA5;
+  }
+
+  /* ================================
+     CONTENIDO PRINCIPAL
+     ================================ */
+
+  main {
+    max-width: 900px;
+    margin: 120px auto 30px;
+    padding: 0 20px;
+  }
+
+  article {
+    background-color: var(--tarjeta);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 16px var(--sombra);
+    transition: 0.3s;
+  }
+
+  article:hover {
+    background-color: var(--tarjeta-hover);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  }
+
+  article img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+  }
+
+  article img:hover {
+    transform: scale(1.03);
+  }
+
+  /* ================================
+     BOTONES
+     ================================ */
+
+  button.read-more {
+    padding: 10px 20px;
+    background-color: var(--boton);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    color: var(--texto);
+  }
+
+  button.read-more:hover {
+    background-color: var(--boton-hover);
+    color: #ffffff;
+  }
+
+  /* ================================
+     PIE DE PÁGINA
+     ================================ */
+
+  footer {
+    background-color: var(--header);
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px var(--sombra);
+  }
+
+  footer a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  footer a:hover {
+    color: #FF8FA5;
+  }
+
+  /* ================================
+     RESPONSIVE
+     ================================ */
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8em;
     }
 
     nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #FF91A4;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 100px auto 30px;
-      padding: 0 20px;
+      display: inline-block;
+      margin-top: 5px;
     }
 
     article {
-      background-color: #FFE3EB;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 16px;
     }
-
-    article:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    }
-
-    article img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      transition: transform 0.3s;
-    }
-
-    article img:hover {
-      transform: scale(1.05);
-    }
-
-    button.read-more:hover {
-      background-color: #FFD9E2;
-      color: #333333;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #FFC7D6;
-      margin-top: 30px;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
