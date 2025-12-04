@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog Moderno Avanzado</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFF5F7;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #FFDDE2;
+      padding: 15px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FF91A4;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 100px auto 30px;
+      padding: 0 20px;
+    }
+
+    article {
+      background-color: #FFF0F3;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    article img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    article img:hover {
+      transform: scale(1.05);
+    }
+
+    button.read-more:hover {
+      background-color: #FF91A4;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #FFDDE2;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Blog Moderno</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Sobre mí</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <img src="https://via.placeholder.com/800x300" alt="Imagen artículo 1">
+      <h2>Artículo 1</h2>
+      <p>Ejemplo de artículo moderno con tonos pastel.</p>
+      <button class="read-more">Leer más</button>
+    </article>
+
+    <article>
+      <img src="https://via.placeholder.com/800x300" alt="Imagen artículo 2">
+      <h2>Artículo 2</h2>
+      <p>Otro artículo con efectos visuales elegantes.</p>
+      <button class="read-more">Leer más</button>
+    </article>
+  </main>
+
+  <footer>
+    © 2025 Mi Blog Moderno
+  </footer>
+
+</body>
+</html>
